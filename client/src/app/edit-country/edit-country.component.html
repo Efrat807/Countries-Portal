@@ -1,0 +1,23 @@
+<p>edit-country works!</p>
+
+<!-- <div ngIf="country$ | async as country; else loading">
+    <label for="name">name</label>
+   
+</div> -->
+
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+  <label for="name">Name:</label>
+  <input type="text" id="commonName" formControlName="commonName">
+
+  <label for="name">Name:</label>
+  <input type="text" id="officialName" formControlName="officialName">
+  
+  <label for="capital">Capital:</label>
+  <input type="text" id="capital" formControlName="capital">
+  
+  <label for="region">Region:</label>
+  <input type="text" id="region" formControlName="region">
+  
+  <button type="submit">Save Changes</button>
+</form>
+
